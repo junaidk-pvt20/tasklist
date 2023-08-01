@@ -15,6 +15,11 @@ const Navbar = () => {
       title:
         " Create 2 components A and B, A passes some props to B  B should display the data received from A",
     },
+    {
+      path: "conditional-rendering",
+      title:
+        " Create a switch input field. Display ON on the screen when the toggle is on and show OFF otherwise.",
+    },
   ];
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   const toggleDropdown = () => {

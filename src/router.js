@@ -4,6 +4,8 @@ import Stopwatch from "./pages/stopwatch/Stopwatch";
 import Diffrence from "./pages/stopwatch/Diffrence";
 import HandlingEvents from "./pages/HandlingEvents";
 import PassValue from "./pages/PassValuesthorughprops";
+import ConditionalRendering from "./pages/ConditionalRendering";
+
 const appRouter = createBrowserRouter([
   {
     path: "/",
@@ -24,6 +26,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/components-and-props",
         element: <PassValue />,
+      },
+      {
+        path: "/conditional-rendering",
+        element: <ConditionalRendering />,
       },
     ],
   },

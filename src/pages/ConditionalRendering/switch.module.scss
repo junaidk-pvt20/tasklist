@@ -1,0 +1,44 @@
+.switch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 134px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #ccc;
+  padding: 2px;
+  transition: background-color 0.3s;
+
+  span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    padding: 15px 20px;
+    user-select: none;
+  }
+
+  .slider {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    transition: transform 0.3s;
+  }
+
+  &.on {
+    background-color: #2ecc71;
+  }
+
+  &.on .slider {
+    transform: translateX(80px);
+  }
+
+  &.off {
+    background-color: #e74c3c;
+  }
+
+  &.off .slider {
+    transform: translateX(0);
+  }
+}
