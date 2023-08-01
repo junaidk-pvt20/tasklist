@@ -1,0 +1,32 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 25px;
+  padding: 20px;
+  background-color: lightblue;
+  font-weight: 700;
+  .navdropdownbtn {
+    background-color: rgb(47, 47, 186);
+    padding: 10px;
+    color: white;
+    font-weight: 700;
+    &:hover {
+      background-color: rgb(81, 81, 250);
+    }
+  }
+}
+.navdropdown {
+  position: absolute;
+  right: 10px;
+  word-wrap: break-word;
+  display: flex;
+  justify-content: end;
+  border: 1px solid black;
+  padding: 10px;
+  width: 40vh;
+  background-color: azure;
+  .navdroplist {
+    justify-self: start;
+  }
+}
