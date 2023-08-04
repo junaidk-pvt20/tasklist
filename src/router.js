@@ -1,36 +1,41 @@
 import { createBrowserRouter } from "react-router-dom";
-import HomePage from "./pages/HomePage/Index";
-import Stopwatch from "./pages/stopwatch/Stopwatch";
-import Diffrence from "./pages/stopwatch/Diffrence";
-import HandlingEvents from "./pages/HandlingEvents";
-import PassValue from "./pages/PassValuesthorughprops";
-import ConditionalRendering from "./pages/ConditionalRendering";
-
+import { lazy } from "react";
+import { PATH } from "./utils/utils";
+const HomePage = lazy(() => import("./pages/HomePage/Index"));
+const Stopwatch = lazy(() => import("./pages/stopwatch/Stopwatch"));
+const Diffrence = lazy(() => import("./pages/stopwatch/Diffrence"));
+const HandlingEvents = lazy(() => import("./pages/HandlingEvents"));
+const PassValue = lazy(() => import("./pages/PassValuesthorughprops"));
+const ConditionalRendering = lazy(() => import("./pages/ConditionalRendering"));
+const Redux = lazy(() => import("./pages/Redux"))
 const appRouter = createBrowserRouter([
   {
-    path: "/",
+    path: PATH.DEFAULT,
     element: <HomePage />,
     children: [
       {
-        path: "/stopwatch",
+        path: PATH.STOPWATCH,
         element: <Stopwatch />,
       },
       {
-        path: "/setTimeout-vs-setInterval",
+        path: PATH.SETTIMEOUT_INTERVAL,
         element: <Diffrence />,
       },
       {
-        path: "/handling-events",
+        path: PATH.HANDLING_EVENTS,
         element: <HandlingEvents />,
       },
       {
-        path: "/components-and-props",
+        path: PATH.COMPONENTS_PROPS,
         element: <PassValue />,
       },
       {
-        path: "/conditional-rendering",
+        path: PATH.CONDITIONAL_RENDERING,
         element: <ConditionalRendering />,
-      },
+      }, {
+        path: PATH.REDUX,
+        element: <Redux />
+      }
     ],
   },
 ]);

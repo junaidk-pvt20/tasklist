@@ -2,24 +2,29 @@ import React, { useState } from "react";
 import styles from "./Navbar.module.scss";
 import index from "../pages/HomePage/Index";
 import { Link } from "react-router-dom";
+import { PATH } from "../utils/utils";
 const Navbar = () => {
   const dropdown = [
-    { path: "stopwatch", title: "create a countdown clock and stopwatch." },
+    { path: PATH.STOPWATCH, title: "create a countdown clock and stopwatch." },
     {
-      path: "setTimeout-vs-setInterval",
+      path: PATH.SETTIMEOUT_INTERVAL,
       title: "Implement an example showcasing both the use cases",
     },
-    { path: "handling-events", title: "Handling events" },
+    { path: PATH.HANDLING_EVENTS, title: "Handling events" },
     {
-      path: "components-and-props",
+      path: PATH.COMPONENTS_PROPS,
       title:
         " Create 2 components A and B, A passes some props to B  B should display the data received from A",
     },
     {
-      path: "conditional-rendering",
+      path: PATH.CONDITIONAL_RENDERING,
       title:
         " Create a switch input field. Display ON on the screen when the toggle is on and show OFF otherwise.",
     },
+    {
+      path: PATH.REDUX,
+      title: "Implementing Redux"
+    }
   ];
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   const toggleDropdown = () => {
