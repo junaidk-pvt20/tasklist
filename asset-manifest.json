@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/tasklist/static/css/main.42a1e32a.css",
-    "main.js": "/tasklist/static/js/main.0b2d3dbd.js",
+    "main.js": "/tasklist/static/js/main.5dc74298.js",
     "static/css/978.84eb6c0d.chunk.css": "/tasklist/static/css/978.84eb6c0d.chunk.css",
     "static/js/978.9ce9d399.chunk.js": "/tasklist/static/js/978.9ce9d399.chunk.js",
     "static/css/186.a2740541.chunk.css": "/tasklist/static/css/186.a2740541.chunk.css",
@@ -18,7 +18,7 @@
     "static/media/globalReducer": "/tasklist/static/media/globalReducer.49f54291fcbcfc4fc34d",
     "index.html": "/tasklist/index.html",
     "main.42a1e32a.css.map": "/tasklist/static/css/main.42a1e32a.css.map",
-    "main.0b2d3dbd.js.map": "/tasklist/static/js/main.0b2d3dbd.js.map",
+    "main.5dc74298.js.map": "/tasklist/static/js/main.5dc74298.js.map",
     "978.84eb6c0d.chunk.css.map": "/tasklist/static/css/978.84eb6c0d.chunk.css.map",
     "978.9ce9d399.chunk.js.map": "/tasklist/static/js/978.9ce9d399.chunk.js.map",
     "186.a2740541.chunk.css.map": "/tasklist/static/css/186.a2740541.chunk.css.map",
@@ -35,6 +35,6 @@
   },
   "entrypoints": [
     "static/css/main.42a1e32a.css",
-    "static/js/main.0b2d3dbd.js"
+    "static/js/main.5dc74298.js"
   ]
 }
