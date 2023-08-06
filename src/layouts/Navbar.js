@@ -3,6 +3,7 @@ import styles from "./Navbar.module.scss";
 import index from "../pages/HomePage/Index";
 import { Link } from "react-router-dom";
 import { PATH } from "../utils/utils";
+import { useSelector } from "react-redux/es/hooks/useSelector";
 const Navbar = () => {
   const dropdown = [
     { path: PATH.STOPWATCH, title: "create a countdown clock and stopwatch." },
@@ -23,18 +24,23 @@ const Navbar = () => {
     },
     {
       path: PATH.REDUX,
-      title: "Implementing Redux"
+      title: "Implementing UseEffect, Redux "
     }
   ];
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   const toggleDropdown = () => {
     setDropdownOpen(!isDropdownOpen);
   };
+  const items = useSelector((state) => state?.carts?.cart)
   return (
     <>
       <div className={styles.navbar}>
-        <div> Junaid Khan </div>
+        <div className={styles.list}>
+          <p>Junaid Khan </p>
+          <p> Cart {items.length} </p>
+        </div>
         <div className="navbar-dropdown">
+
           <button className={styles.navdropdownbtn} onClick={toggleDropdown}>
             Task List
           </button>

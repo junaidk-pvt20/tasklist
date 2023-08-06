@@ -1,15 +1,17 @@
-import React, { Suspense } from "react";
+import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import { RouterProvider } from "react-router-dom";
+import { Provider } from 'react-redux'
+import { store } from './store'
 import appRouter from "./router";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   // <React.StrictMode>
-  <Suspense fallback="Loading....">
+  <Provider store={store}>
     <RouterProvider router={appRouter} />
-  </Suspense>
+  </Provider>
   // </React.StrictMode>
 );
 

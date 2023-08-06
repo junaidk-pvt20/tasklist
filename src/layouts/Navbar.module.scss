@@ -6,6 +6,11 @@
   padding: 20px;
   background-color: lightblue;
   font-weight: 700;
+  .list{
+    display: flex;
+    justify-content: space-around;
+    gap : 30px
+  }
   .navdropdownbtn {
     background-color: rgb(47, 47, 186);
     padding: 10px;
