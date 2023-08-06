@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   // <React.StrictMode>
   <Provider store={store}>
-    <RouterProvider router={appRouter} />
+    <RouterProvider basename="/tasklist" router={appRouter} />
   </Provider>
   // </React.StrictMode>
 );
