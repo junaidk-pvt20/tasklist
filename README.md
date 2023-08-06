@@ -40,3 +40,5 @@ check tutorial and implement it.
 
 15) Show how many tasks the employee has completed each month using chart js
 
+
+youtube.com/watch?v=Q9n2mLqXFpU
