@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createHashRouter } from "react-router-dom";
 import { lazy } from "react";
 import { PATH } from "./utils/utils";
 const HomePage = lazy(() => import("./pages/HomePage/Index"));
@@ -8,7 +8,7 @@ const HandlingEvents = lazy(() => import("./pages/HandlingEvents"));
 const PassValue = lazy(() => import("./pages/PassValuesthorughprops"));
 const ConditionalRendering = lazy(() => import("./pages/ConditionalRendering"));
 const Redux = lazy(() => import("./pages/Redux"))
-const appRouter = createBrowserRouter([
+const appRouter = createHashRouter([
   {
     path: PATH.DEFAULT,
     element: <HomePage />,
