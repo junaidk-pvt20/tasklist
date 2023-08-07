@@ -1,6 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-// import { executeReducerBuilderCallback } from "@reduxjs/toolkit/dist/mapBuilders";
-// import { fetchProducts } from ".";
+
 const cartSlice = createSlice({
     name: 'cart',
     initialState: {
@@ -29,12 +28,6 @@ const cartSlice = createSlice({
 
         },
     },
-    // extraReducers: (builder) => {
-    //     builder
-    //         .addCase(fetchProducts.fulfilled, (state, action) => {
-
-    //         })
-    // }
 })
 
 
