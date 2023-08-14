@@ -5,20 +5,21 @@ export const fetchProducts = createAsyncThunk(
     "products/fetch",
     async () => {
         const res = await fetch('https://fakestoreapi.com/products');
-        const data = await res.json();
-        return data
+        const data1 = await res.json();
+        return data1
     }
 )
 const productSlice = createSlice({
     name: 'product',
     initialState: {
-        product: [],
+        products: [],
 
     },
     extraReducers: (builder) => {
         builder
             .addCase(fetchProducts.fulfilled, (state, action) => {
-                state.data = action.payload
+                console.log('state', state)
+                state.products = action.payload
             })
     }
 })

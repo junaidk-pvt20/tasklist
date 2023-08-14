@@ -7,7 +7,7 @@ import { fetchProducts } from '../../store/productSlice'
 const Index = () => {
   // const [products, setProducts] = useState([])
 
-  const { data: products } = useSelector((state) => state.product)
+  const { products } = useSelector((state) => state.product)
   const dispatch = useDispatch()
   const handleAdd = (product) => {
     dispatch(add(product))

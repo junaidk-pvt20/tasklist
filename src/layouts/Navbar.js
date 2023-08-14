@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import styles from "./Navbar.module.scss";
-import index from "../pages/HomePage/Index";
 import { Link } from "react-router-dom";
 import { PATH } from "../utils/utils";
 import { useSelector } from "react-redux/es/hooks/useSelector";
@@ -25,6 +24,9 @@ const Navbar = () => {
     {
       path: PATH.REDUX,
       title: "Implementing UseEffect, Redux "
+    }, {
+      path: PATH.API_INTEGRATION,
+      title: "API Integration: Todo List"
     }
   ];
   const [isDropdownOpen, setDropdownOpen] = useState(false);

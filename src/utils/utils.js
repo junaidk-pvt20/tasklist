@@ -5,5 +5,6 @@ export const PATH = {
     HANDLING_EVENTS: "handling-events",
     COMPONENTS_PROPS: "components-and-props",
     CONDITIONAL_RENDERING: "conditional-rendering",
-    REDUX: "redux"
+    REDUX: "redux",
+    API_INTEGRATION: "ApiIntegration"
 }

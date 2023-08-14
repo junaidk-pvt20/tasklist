@@ -1,13 +1,14 @@
 import { createHashRouter, createBrowserRouter, Routes } from "react-router-dom";
 import { lazy } from "react";
 import { PATH } from "./utils/utils";
-const HomePage = lazy(() => import("./pages/HomePage/Index"));
+const HomePage = lazy(() => import("./pages/HomePage/Home"));
 const Stopwatch = lazy(() => import("./pages/stopwatch/Stopwatch"));
 const Diffrence = lazy(() => import("./pages/stopwatch/Diffrence"));
 const HandlingEvents = lazy(() => import("./pages/HandlingEvents"));
 const PassValue = lazy(() => import("./pages/PassValuesthorughprops"));
 const ConditionalRendering = lazy(() => import("./pages/ConditionalRendering"));
-const Redux = lazy(() => import("./pages/Redux"))
+const Redux = lazy(() => import("./pages/Redux"));
+const ApiIntegration = lazy(() => import("./pages/ApiIntegration/ApiIntegration"));
 const appRouter = createBrowserRouter([
   {
 
@@ -36,7 +37,11 @@ const appRouter = createBrowserRouter([
       }, {
         path: PATH.REDUX,
         element: <Redux />
+      }, {
+        path: PATH.API_INTEGRATION,
+        element: <ApiIntegration />
       }
+
     ],
   },
 ], {
